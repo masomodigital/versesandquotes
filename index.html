@@ -36,6 +36,14 @@
             font-size: 16px;
             margin-bottom: 20px;
         }
+        label {
+            display: block;
+            text-align: left;
+            margin-left: 10%;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
         input[type="text"], input[type="password"] {
             padding: 10px;
             width: 80%;
@@ -82,9 +90,11 @@
     <div class="container">
         <img src="https://i.imgur.com/Q2KwPIV.png" alt="Logo">
         <h1>Admin Login</h1>
-        <p>Enter your Admin credentials to login and send your Bible verse, power quote, motivational or inspirational message to your subscribers.</p>
+        <p>Enter your Admin credentials to login and send your Bible verse, quote, motivational or inspirational message to your subscribers.</p>
         <form onsubmit="return submitForm()">
+            <label for="username">Username</label>
             <input type="text" id="username" placeholder="Username" required><br>
+            <label for="password">Password</label>
             <input type="password" id="password" placeholder="Password" required><br>
             <button type="submit" class="submit-btn">Submit</button>
         </form>
